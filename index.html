@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>PlagPrevent – Détection de plagiat</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fa;margin:0;padding:0}
+    header{background:#0057ff;color:#fff;padding:20px 0;text-align:center}
+    .container{max-width:600px;margin:40px auto;background:#fff;padding:30px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+    h2{color:#0057ff}
+    .btn{background:#0057ff;color:#fff;padding:10px 20px;border:none;border-radius:4px;cursor:pointer}
+    .btn:hover{background:#0041c7}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PlagPrevent</h1>
+    <p>Plateforme académique de détection de plagiat</p>
+  </header>
+  <div class="container">
+    <h2>Uploader votre devoir</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".pdf,.docx,.txt" required>
+      <button class="btn" type="submit">Analyser</button>
+    </form>
+  </div>
+</body>
+</html>
